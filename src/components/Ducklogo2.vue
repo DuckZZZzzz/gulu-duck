@@ -1,6 +1,6 @@
 <template>
     <h1>
-        Ducklogo-{{ ele }}
+        Ducklogo2-{{ ele }}
     </h1>
 </template>
 

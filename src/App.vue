@@ -1,9 +1,8 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <Ducklogo ele="tab">标签栏</Ducklogo>
+  <div>导航栏 | <router-link to="/">ducklogo</router-link> | <router-link to="/q">ducklogo2</router-link></div>
+  <router-view />
 </template>
 
 <script setup>
-import Ducklogo from './components/Ducklogo.vue'
 
 </script>
