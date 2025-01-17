@@ -10,6 +10,8 @@
 </template>
 <script setup lang="ts">
 import { inject, Ref } from 'vue';
+
+
 const menuvisible = inject<Ref<boolean>>('menuvisible') as Ref<boolean>
 // 为什么需要同时使用泛型 <Ref<boolean>> 和类型断言 as Ref<boolean>，这实际上是出于两个不同的目的
 // 泛型：主要用于静态类型检查，帮助你在编写代码时捕捉潜在错误。
