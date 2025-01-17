@@ -38,7 +38,6 @@ const menuvisible =  inject<Ref<boolean>>('menuvisible')
         text-align: center;
         width: 150px;
         height: 100%;
-        padding-top: 50px;
         border-right: 1px solid #ccc;
         >h2{
             margin-bottom: 4px;
