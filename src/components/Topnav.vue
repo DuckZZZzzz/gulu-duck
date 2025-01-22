@@ -17,7 +17,6 @@ const menuvisible = inject<Ref<boolean>>('menuvisible') as Ref<boolean>
 // 泛型：主要用于静态类型检查，帮助你在编写代码时捕捉潜在错误。
 // 断言：用于运行时的行为，确保即使在某些情况下 TypeScript 无法确认类型，你的代码仍然能够正常工作
 // 比如这里如果不写断言，menuvisible也许会是undefined，如果你确定 menuvisible 一定不会是 undefined，可以使用非空断言操作符 ! 来代替显式的类型断言
-console.log(menuvisible);
 
 const togglemenu = () => {
     menuvisible.value = !menuvisible.value
