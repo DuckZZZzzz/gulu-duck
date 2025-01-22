@@ -20,9 +20,10 @@
         <Button size="small" theme="text">小小小</Button>
     </div>
     <div>
+        <Button theme="button" level="main">主要按钮</Button>
+        <Button theme="button" level="normal">普通按钮</Button>
         <Button theme="button" level="danger">危险按钮</Button>
-        <Button theme="link" level="danger">危险链接</Button>
-        <Button theme="text" level="danger">危险文本</Button>
+
     </div>
     <div>
         <Button theme="button" disabled >无法点击按钮</Button>

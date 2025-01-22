@@ -55,17 +55,18 @@ const classString = computed(() => {
     border-radius: 4px;
     padding: 4px 8px;
     cursor: pointer;
+    background: #fff;
 
     // 哇好聪明
     & + & {
         margin-left: 8px;
     }
     &.gulu-theme-button {
-        background: $blue;
-        color: #fff;
+        color:#000;
         box-shadow: 0 1px 0 fade-out(#000000,  0.95);
     }
     &.gulu-theme-link {
+        background: #fff;
         border: none;
         color: $blue;
     }
@@ -82,9 +83,9 @@ const classString = computed(() => {
         font-size: 12px;
         padding: 2px 4px;
     }
-    &.gulu-level-danger {
-        color: #f56c6c;
-        font-weight: bold;
+    &.gulu-theme-button.gulu-level-main {
+        background-color: $blue;
+        color: #fff;
     }
     &.gulu-theme-button.gulu-level-danger {
         background-color: #f56c6c;
@@ -99,7 +100,7 @@ const classString = computed(() => {
         display: inline-block;
         margin-right: 4px;
         border-radius: 8px;
-        border-color: #fff #fff #fff transparent;
+        border-color: $blue $blue $blue transparent;
         border-style: solid;
         border-width: 2px;
         animation: gulu-spin 1s infinite linear;
