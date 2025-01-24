@@ -23,3 +23,12 @@
 import { inject, Ref } from 'vue';
 const menuvisible =  inject<Ref<boolean>>('menuvisible') as Ref<boolean>
 </script>
+
+<style lang="scss" scoped>
+aside{
+
+white-space: nowrap;
+padding: 30px;
+}
+
+</style>

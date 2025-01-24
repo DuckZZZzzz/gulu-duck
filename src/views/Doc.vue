@@ -1,11 +1,14 @@
 <template>
-        <Topnav />
+    <div class="box">
+        <Topnav :togglemenuBtnVisible="true" />
         <div class="content">
             <Aside />
             <main>
                 <router-view />
             </main>
         </div>
+
+    </div>
 </template>
 
 <script setup lang="ts">
@@ -15,9 +18,17 @@ import Aside from "../components/Aside.vue";
 </script>
 
 <style lang="scss" scoped>
-.content{
+.box {
     display: flex;
+    flex-direction: column;
     height: 100%;
+    width: 100%;
+}
+.content{
+    // white-space: nowrap;
+    flex: 1;
+    //注意flex：1生效的前提是父容器高度固定
+    display: flex;
     aside{
         box-sizing: border-box;
         text-align: center;
@@ -35,7 +46,7 @@ import Aside from "../components/Aside.vue";
     main{
         flex: 1;
         padding: 16px;
-        overflow: auto;
+        overflow: hidden;
     }
 }
 
