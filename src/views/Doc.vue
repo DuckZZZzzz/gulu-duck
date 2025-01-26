@@ -29,20 +29,6 @@ import Aside from "../components/Aside.vue";
     flex: 1;
     //注意flex：1生效的前提是父容器高度固定
     display: flex;
-    aside{
-        box-sizing: border-box;
-        text-align: center;
-        width: 150px;
-        height: 100%;
-        border-right: 1px solid #ccc;
-        >h2{
-            margin-bottom: 4px;
-        }
-        >.list {
-            height: 85%;
-            overflow: auto;
-        }
-    }
     main{
         flex: 1;
         padding: 16px;

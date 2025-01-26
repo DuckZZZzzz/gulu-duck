@@ -19,6 +19,18 @@ export const router = createRouter({
                     component: () => import('./components/DocDemo.vue')
                 },
                 {
+                    path: 'intro',
+                    component: () => import('./components/Intro.vue')
+                },
+                {
+                    path: 'installation',
+                    component: () => import('./components/Installation.vue')
+                },
+                {
+                    path: 'get-started',
+                    component: () => import('./components/GetStarted.vue')
+                },
+                {
                     path: 'switch',
                     component: () => import('./components/SwitchDemo.vue')
                 },
