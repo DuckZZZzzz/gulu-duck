@@ -29,7 +29,7 @@ const props = defineProps({
     togglemenuBtnVisible: Boolean
 })
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .topnav {
     padding: 16px;
     display: flex;

@@ -63,7 +63,7 @@ const classString = computed(() => {
     }
     &.gulu-theme-button {
         color:#000;
-        box-shadow: 0 1px 0 fade-out(#000000,  0.95);
+        box-shadow: 0 1px 0 rgba( #000000, 0.05);
     }
     &.gulu-theme-link {
         background: #fff;
