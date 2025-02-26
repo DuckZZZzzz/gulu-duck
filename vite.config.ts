@@ -18,7 +18,6 @@ export default {
         JSON.stringify(main)
         }
         Component.__sourceCodeTitle = ${JSON.stringify(title)}
-        Component.__parsed = ${JSON.stringify(parsed)}
       }`.trim()
     }
   }

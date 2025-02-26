@@ -1,31 +1,9 @@
 <template>
 <div>
     <h1>Switch 组件示例 </h1>
-    <div class="demo">
-      <h2 v-text="sourceCodeTitle"></h2>
-      <div class="demo-component">
-        <SwitchSourceDemo />
-      </div>
-      <div class="demo-actions">
-        <Button size="small">查看代码</Button>
-      </div>
-      <div class="demo-code">
-        <pre class="language-html" v-html="Prism.highlight(sourceCode, Prism.languages.html, 'html')"></pre>
-      </div>
-    </div>
-    <div class="demo">
-    <h2 v-text="sourceCodeTitle2"></h2>
-      <div class="demo-component">
-        <SwitchSourceDemo2 />
-      </div>
-      <div class="demo-actions">
-        <Button size="small">查看代码</Button>
-      </div>
-      <div class="demo-code">
-        <pre class="language-html" v-html="Prism.highlight(sourceCode2, Prism.languages.html, 'html')"></pre>
-      </div>
-    </div>
-  </div>
+    <Demo :sourceDemo="SwitchSourceDemo" />
+    <Demo :sourceDemo="SwitchSourceDemo2" />
+
 <!-- 通过 checked = $event 非常方便地获取到了子组件的传值 -->
 
 </template>
@@ -34,49 +12,7 @@
 import { ref } from 'vue';
 import SwitchSourceDemo from './sourceDemo/SwitchSourceDemo.vue';
 import SwitchSourceDemo2 from './sourceDemo/SwitchSourceDemo2.vue';
-import Button from '../lib/Button.vue';
-import Prism from 'prismjs';
-import 'prismjs/themes/prism.css';
-console.log(Prism)
-
-const sourceCode = SwitchSourceDemo.__sourceCode;
-const sourceCodeTitle = SwitchSourceDemo.__sourceCodeTitle;
-const sourceCode2 = SwitchSourceDemo2.__sourceCode;
-const sourceCodeTitle2 = SwitchSourceDemo2.__sourceCodeTitle;
+import Demo from './Demo.vue';
 
 </script>
 
-<style lang="scss" scoped>
-$border-color: #d9d9d9;
-.demo {
-  border: 1px solid $border-color;
-  margin: 16px 0 32px;
-
-  > h2 {
-    font-size: 20px;
-    padding: 8px 16px;
-    border-bottom: 1px solid $border-color;
-  }
-
-  &-component {
-    padding: 16px;
-  }
-
-  &-actions {
-    padding: 8px 16px;
-    border-top: 1px dashed $border-color;
-  }
-
-  &-code {
-    padding: 8px 16px;
-    border-top: 1px dashed $border-color;
-
-    > pre {
-      line-height: 1.1;
-      font-family: Consolas, 'Courier New', Courier, monospace;
-      margin: 0;
-      white-space: pre-wrap;//适配移动端展示
-    }
-  }
-}
-</style>
