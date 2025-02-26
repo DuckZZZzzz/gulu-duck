@@ -6,6 +6,7 @@
             <h2>一个厉害的UI框架</h2>
             <p class="actions">
                 <a href="https://github.com/" target="_blank">GitHub</a>
+                <a href="https://gitee.com/duckZzzzzz/vue3-gulu" target="_blank">Gitee</a>
                 <router-link to="/doc">开始</router-link>
             </p>
         </div>

@@ -45,6 +45,9 @@ const classString = computed(() => {
 <style lang="scss">
 // UI库的样式不能用scoped 如果样式是 scoped 的，那么用户就需要针对每个组件单独进行样式覆盖，这会增加开发和维护成本
     $blue: #409eff;
+    .gulu-button:active:not([disabled]) {
+    transform: translateY(1px);
+}
 .gulu-button {
     display: inline-flex;
     justify-content: center;

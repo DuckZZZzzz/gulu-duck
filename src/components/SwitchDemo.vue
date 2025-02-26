@@ -1,14 +1,75 @@
 <template>
-    <Switch v-model:value="y"   />
-<!-- 通过 y = $event 非常方便地获取到了子组件的传值 -->
+<div>
+    <h1>Switch 组件示例 </h1>
+    <div class="demo">
+      <h2>常规用法</h2>
+      <div class="demo-component">
+        <SwitchSourceDemo />
+      </div>
+      <div class="demo-actions">
+        <Button size="small">查看代码</Button>
+      </div>
+      <div class="demo-code">
+        <pre>&lt;Switch v-model:value="bool" /&gt;</pre>
+      </div>
+    </div>
+    <div class="demo">
+      <h2>支持disabled</h2>
+      <div class="demo-component">
+        <SwitchSourceDemo2 />
+      </div>
+      <div class="demo-actions">
+        <Button size="small">查看代码</Button>
+      </div>
+      <div class="demo-code">
+        <pre>&lt;Switch v-model:value="bool" /&gt;</pre>
+      </div>
+    </div>
+  </div>
+<!-- 通过 checked = $event 非常方便地获取到了子组件的传值 -->
 
 </template>
 
 <script setup lang="ts">
-import Switch from '../lib/Switch.vue';
 import { ref } from 'vue';
-
-const y = ref(false);
+import SwitchSourceDemo from './sourceDemo/SwitchSourceDemo.vue';
+import SwitchSourceDemo2 from './sourceDemo/SwitchSourceDemo2.vue';
+import Button from '../lib/Button.vue';
 
 
 </script>
+
+<style lang="scss" scoped>
+$border-color: #d9d9d9;
+.demo {
+  border: 1px solid $border-color;
+  margin: 16px 0 32px;
+
+  > h2 {
+    font-size: 20px;
+    padding: 8px 16px;
+    border-bottom: 1px solid $border-color;
+  }
+
+  &-component {
+    padding: 16px;
+  }
+
+  &-actions {
+    padding: 8px 16px;
+    border-top: 1px dashed $border-color;
+  }
+
+  &-code {
+    padding: 8px 16px;
+    border-top: 1px dashed $border-color;
+
+    > pre {
+      line-height: 1.1;
+      font-family: Consolas, 'Courier New', Courier, monospace;
+      margin: 0;
+      white-space: pre-wrap;//适配移动端展示
+    }
+  }
+}
+</style>
