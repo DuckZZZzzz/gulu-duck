@@ -2,7 +2,7 @@
 <div>
     <h1>Switch 组件示例 </h1>
     <div class="demo">
-      <h2>常规用法</h2>
+      <h2 v-text="sourceCodeTitle"></h2>
       <div class="demo-component">
         <SwitchSourceDemo />
       </div>
@@ -10,11 +10,11 @@
         <Button size="small">查看代码</Button>
       </div>
       <div class="demo-code">
-        <pre>&lt;Switch v-model:value="bool" /&gt;</pre>
+        <pre v-text="sourceCode"></pre>
       </div>
     </div>
     <div class="demo">
-      <h2>支持disabled</h2>
+    <h2 v-text="sourceCodeTitle2"></h2>
       <div class="demo-component">
         <SwitchSourceDemo2 />
       </div>
@@ -22,7 +22,7 @@
         <Button size="small">查看代码</Button>
       </div>
       <div class="demo-code">
-        <pre>&lt;Switch v-model:value="bool" /&gt;</pre>
+        <pre v-text="sourceCode2"></pre>
       </div>
     </div>
   </div>
@@ -36,6 +36,10 @@ import SwitchSourceDemo from './sourceDemo/SwitchSourceDemo.vue';
 import SwitchSourceDemo2 from './sourceDemo/SwitchSourceDemo2.vue';
 import Button from '../lib/Button.vue';
 
+const sourceCode = SwitchSourceDemo.__sourceCode;
+const sourceCodeTitle = SwitchSourceDemo.__sourceCodeTitle;
+const sourceCode2 = SwitchSourceDemo2.__sourceCode;
+const sourceCodeTitle2 = SwitchSourceDemo2.__sourceCodeTitle;
 
 </script>
 
