@@ -6,7 +6,7 @@
     <Switch v-model:value="checked" disabled/>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue'
 import Switch from '../../lib/Switch.vue'
 
