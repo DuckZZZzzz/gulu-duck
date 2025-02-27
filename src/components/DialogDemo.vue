@@ -6,6 +6,6 @@
 </template>
 
 <script setup lang="ts">
-import DialogSourceDemo from './sourceDemo/DialogSourceDemo.vue'
+import DialogSourceDemo from '../sourceDemo/DialogSourceDemo.vue'
 import Demo from './Demo.vue'
 </script>

@@ -9,8 +9,8 @@
 </template>
 
 <script setup lang="ts">
-import SwitchSourceDemo from './sourceDemo/SwitchSourceDemo.vue';
-import SwitchSourceDemo2 from './sourceDemo/SwitchSourceDemo2.vue';
+import SwitchSourceDemo from '../sourceDemo/SwitchSourceDemo.vue';
+import SwitchSourceDemo2 from '../sourceDemo/SwitchSourceDemo2.vue';
 import Demo from './Demo.vue';
 
 </script>

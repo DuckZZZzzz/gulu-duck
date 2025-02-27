@@ -7,6 +7,6 @@
 </template>
 
 <script setup lang="ts">
-import TabsSourceDemo from "./sourceDemo/TabsSourceDemo.vue";
+import TabsSourceDemo from "../sourceDemo/TabsSourceDemo.vue";
 import Demo from "./Demo.vue";
 </script>

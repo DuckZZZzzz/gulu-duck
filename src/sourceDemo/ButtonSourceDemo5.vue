@@ -9,6 +9,6 @@
 </template>
 
 <script setup lang="ts">
-import Button from '../../lib/Button.vue';
+import Button from '../lib/Button.vue';
 
 </script>
