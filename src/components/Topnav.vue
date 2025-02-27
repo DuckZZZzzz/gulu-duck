@@ -5,7 +5,7 @@
                 <use xlink:href="#icon-folder"></use>
             </svg>
         </span>
-        <a class="logo" href="/">
+        <a class="logo" href="https://duckzzzzzz.github.io/gulu-duck-ui/">
             <svg class="icon" >
                 <use xlink:href="#icon-duck"></use>
             </svg>
@@ -17,11 +17,6 @@
 <script setup lang="ts">
 import { inject, Ref } from 'vue';
 const menuvisible = inject<Ref<boolean>>('menuvisible') as Ref<boolean>
-// 为什么需要同时使用泛型 <Ref<boolean>> 和类型断言 as Ref<boolean>，这实际上是出于两个不同的目的
-// 泛型：主要用于静态类型检查，帮助你在编写代码时捕捉潜在错误。
-// 断言：用于运行时的行为，确保即使在某些情况下 TypeScript 无法确认类型，你的代码仍然能够正常工作
-// 比如这里如果不写断言，menuvisible也许会是undefined，如果你确定 menuvisible 一定不会是 undefined，可以使用非空断言操作符 ! 来代替显式的类型断言
-
 const togglemenu = () => {
     menuvisible.value = !menuvisible.value
 }
