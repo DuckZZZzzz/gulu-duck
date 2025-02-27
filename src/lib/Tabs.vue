@@ -103,12 +103,13 @@ $blue: #409eff;
 .gulu-tabs-titles {
     display: flex;
     position: relative;
+    border-bottom: 1px solid #ebeef5;
 }
 .gulu-tabs-bar {
     height: 2px;
     position: absolute;
     background-color: $blue;
-    bottom: 0;
+    bottom: -1px;
     border-bottom: 1px solid $blue;
     transition: all 250ms;
 }
