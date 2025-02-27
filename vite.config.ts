@@ -3,6 +3,8 @@ import fs from 'fs'
 import {baseParse} from '@vue/compiler-core'
 
 export default {
+  assetsDir: 'assets',
+  base: './',
   plugins: [md()],
   vueCustomBlockTransforms: {
     // 只有含有demo标签才会进行以下处理
