@@ -103,7 +103,7 @@ $blue: #409eff;
 .gulu-tabs-titles {
     display: flex;
     position: relative;
-    border-bottom: 1px solid #ebeef5;
+    border-bottom: 1px solid #ccc;
 }
 .gulu-tabs-bar {
     height: 2px;

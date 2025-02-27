@@ -70,17 +70,6 @@ const handCancel = () => {
       } 
 }
 
-
-// const yes = () => {
-//     console.log('yes')
-//     close()
-// }
-// 为什么不能直接这样写yes和no呢？因为这样写这个组件就变得非常特定化，难以复用。不同的对话框可能需要不同的确认和取消逻辑，例如需要用户填写内容否则不允许确认
-// const no = () => {
-//     console.log('no')
-//     close
-// }
-
 </script>
 
 <style lang="scss">

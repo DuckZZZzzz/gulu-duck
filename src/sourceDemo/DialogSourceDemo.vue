@@ -15,6 +15,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import Button from '../lib/Button.vue';
 import Dialog from '../lib/Dialog.vue';
 
 const x = ref(false)
