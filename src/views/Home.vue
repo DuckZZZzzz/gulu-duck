@@ -7,7 +7,7 @@
             <p class="actions">
                 <a href="https://github.com/" target="_blank">GitHub</a>
                 <a href="https://gitee.com/duckZzzzzz/vue3-gulu" target="_blank">Gitee</a>
-                <router-link to="/doc">开始</router-link>
+                <router-link to="/doc/intro">开始</router-link>
             </p>
         </div>
     </div>
@@ -87,7 +87,7 @@ import Topnav from '../components/Topnav.vue'
 
 .features {
     margin: 64px auto;
-    width: 400px;
+    // width: 400px;加上这句会导致在手机宽度小于400px的时候页面可以左右移动
 
     @media (min-width: 800px) {
         width: 800px;

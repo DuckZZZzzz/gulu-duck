@@ -1,8 +1,7 @@
-
 <demo>
     常规用法
 </demo>
-<template class="language-css">
+<template>
     <Switch v-model:value="checked"/>
 </template>
 

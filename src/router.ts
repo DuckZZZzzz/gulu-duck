@@ -16,7 +16,8 @@ export const router = createRouter({
             children: [
                 {
                     path: '',
-                    component: () => import('./components/DocDemo.vue')
+                    redirect: '/doc/intro',
+                    component: () => import('./components/Intro.vue')
                 },
                 {
                     path: 'intro',
@@ -51,6 +52,6 @@ export const router = createRouter({
     ]
 })
 
-router.afterEach(() => {
-    console.log('路由切换了')
-})
+// router.afterEach(() => {
+//     console.log('路由切换了')
+// })

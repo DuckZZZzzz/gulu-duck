@@ -85,7 +85,6 @@ const barstyle = reactive({
 const selectedItem = ref<HTMLDivElement>()
 
 const getUpdateBar = () => {
-        console.log(selectedItem.value?.offsetLeft, selectedItem.value?.offsetWidth)
         barstyle.left = selectedItem.value?.offsetLeft + 'px'
         barstyle.width = selectedItem.value?.offsetWidth + 'px'
 }
