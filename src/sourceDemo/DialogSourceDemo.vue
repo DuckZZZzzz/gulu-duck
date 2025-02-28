@@ -2,15 +2,16 @@
     常规用法
 </demo>
 <template>
-  <Button @click="toggle">显示\隐藏</Button>
-  <Dialog
-    v-model:visible="x"
-    :closeOnClickOverlay="false"
-    :ok="onOk"
-    :cancel="onCancel"
-  >
-    <div>这是一段提示</div>
-  </Dialog>
+    <Button level="main" @click="toggle">打开dialog</Button>
+    <Dialog
+      v-model:visible="x"
+      :closeOnClickOverlay="false"
+      :ok="onOk"
+      :cancel="onCancel"
+      :title="title"
+    >
+      <div>没有梦想何必远方</div>
+    </Dialog>
 </template>
 
 <script setup lang="ts">
@@ -29,4 +30,5 @@ const onOk = () => {
 const onCancel = () => {
     console.log('cancel')
 }
+const title = ref('你也走了很远的路吧')
 </script>

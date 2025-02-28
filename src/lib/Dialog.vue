@@ -1,7 +1,6 @@
 <template>
     <template v-if="visible">
         <Teleport to="body">
-            <!-- Teleport 用于将组件挂载到指定的元素上 这里是让dialog的index不受环境影响层级，直接到body里（到app里也可以），确保它永远展示在最上方< -->
             <div class="gulu-dialog-mask" @click="onClickOverlay">
             </div>
             <div class="gulu-dialog-container">
@@ -49,8 +48,6 @@ const onClickOverlay = () => {
         close()
     }
 }
-// 注意visible是父组件的传值，不能直接修改visible
-// Vue 推崇单向数据流（one-way data flow），这有助于保持应用状态的可预测性和更容易调试。如果允许子组件随意修改 props，可能会导致数据流向变得复杂，难以追踪和理解
 const emit = defineEmits(['update:visible'])
 
 const close = () => {
