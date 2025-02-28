@@ -91,7 +91,6 @@ const handCancel = () => {
     min-width: 300px;
     max-height: 500px;
     overflow: auto;
-    // 为了使它的宽度在电脑上不会无限大或无限小，给一个max-width min-width
     background-color: #fff;
     border-radius: 2px;
     padding: 16px;

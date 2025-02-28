@@ -10,12 +10,10 @@ const props = defineProps<{
 
 const emit = defineEmits<{
     (e: 'update:value', value: boolean)
-    // e和value都是为了语义化，换成别的变量名也可以的
 }>()
 
 const toggle = () => {
     emit('update:value', !props.value)
-    // 注意:后没有空格
 }
 </script>
 
@@ -41,8 +39,6 @@ $h2: $h - 4px;
     top: 2px;
     left: 2px;
 
-    // - 的左右两边一点要空格不然不会被识别成减号
-    // 为了保证有个动画的效果，按钮右移只能改left的值不能用right来定位
     height: $h2;
     width: $h2;
     background-color: #fff;
@@ -62,4 +58,4 @@ $h2: $h - 4px;
     outline: none;
 }
 
-// 让button的圈圈消失</style>
+</style>

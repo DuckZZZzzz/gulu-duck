@@ -1,7 +1,9 @@
 {
   "name": "gulu-duck",
-  "version": "0.0.0",
+  "version": "0.0.8",
   "license": "MIT",
+  "files": ["dist/lib/*"],
+  "main": "dist/lib/gulu-duck.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
@@ -12,7 +14,7 @@
     "prismjs": "^1.29.0",
     "vue": "^3.0.0-rc.1",
     "vue-router": "4.0.0-beta.3"
-  },
+  }, 
   "devDependencies": {
     "@vue/compiler-sfc": "^3.0.0-rc.1",
     "rollup-plugin-esbuild": "^6.2.1",

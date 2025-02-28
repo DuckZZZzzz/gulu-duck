@@ -10,8 +10,8 @@ export default {
         globals: {
             vue: 'Vue'
         },
-		name: 'duckui',
-		file: 'dist/lib/duckui.js',
+		name: 'gulu-duck',
+		file: 'dist/lib/gulu-duck.js',
 		format: 'umd',
         plugins: [terser()]
 	},
@@ -22,6 +22,7 @@ export default {
 		scss({
             include: /\.scss$/,
             sass: dartSass,
+			output: { to: 'gulu-duck.css' }
 		}),
 		esbuild({
 			include: /\.[jt]s$/,

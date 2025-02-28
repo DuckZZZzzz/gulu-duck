@@ -4,7 +4,7 @@
 然后在你的代码中写入下面的代码：
 
 ```
-import { Button, Tabs, Switch, Dialog } from 'duck-ui'
+import { Button, Tabs, Switch, Dialog } from 'gulu-duck'
 ```
 
 就可以使用我的组件了
@@ -21,6 +21,6 @@ import { Button, Tabs, Switch, Dialog } from 'duck-ui'
 </template>
 
 <script setup>
-import { Button, Tabs, Switch, Dialog } from 'duck-ui'
+import { Button, Tabs, Switch, Dialog } from 'gulu-duck'
 </script>
 ```

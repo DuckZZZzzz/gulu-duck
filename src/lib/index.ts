@@ -1,12 +1,5 @@
-import Button from './Button.vue';
-import Dialog from './Dialog.vue';
-import Switch from './Switch.vue';
-import Tabs from './Tabs.vue';
-import Tab from './Tab.vue';
-export default {
-    Switch,
-    Button,
-    Dialog,
-    Tabs,
-    Tab
-}
+export { default as Button } from "./Button.vue";
+export { default as Dialog } from "./Dialog.vue";
+export { default as Switch } from "./Switch.vue";
+export { default as Tab } from "./Tab.vue";
+export { default as Tabs } from "./Tabs.vue";

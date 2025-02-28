@@ -23,7 +23,6 @@ const {theme, size, level, loading} = defineProps({
         default: 'normal'
     },
     disabled: {
-        // disabled在props里面声明了就不会自动继承到子组件的根元素上了 需要手动添加
         type: Boolean,
         default: false
     },
@@ -43,7 +42,6 @@ const classString = computed(() => {
 </script>
 
 <style lang="scss">
-// UI库的样式不能用scoped 如果样式是 scoped 的，那么用户就需要针对每个组件单独进行样式覆盖，这会增加开发和维护成本
     $blue: #409eff;
     .gulu-button:active:not([disabled]) {
     transform: translateY(1px);
@@ -54,13 +52,13 @@ const classString = computed(() => {
     align-items: center;
     border: 1px solid #ccc;
     white-space: nowrap;
-    // 文字不换行
+
     border-radius: 4px;
     padding: 4px 8px;
     cursor: pointer;
     background: #fff;
 
-    // 哇好聪明
+
     & + & {
         margin-left: 8px;
     }
