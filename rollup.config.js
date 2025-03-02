@@ -13,6 +13,7 @@ export default {
 		name: 'gulu-duck',
 		file: 'dist/lib/gulu-duck.js',
 		format: 'umd',
+		assetFileNames: 'css/[name][extname]', 
         plugins: [terser()]
 	},
 	plugins: [
@@ -21,8 +22,7 @@ export default {
 		}),
 		scss({
             include: /\.scss$/,
-            sass: dartSass,
-			output: { to: 'gulu-duck.css' }
+            sass: dartSass
 		}),
 		esbuild({
 			include: /\.[jt]s$/,

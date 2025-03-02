@@ -5,6 +5,7 @@
 
 ```
 import { Button, Tabs, Switch, Dialog } from 'gulu-duck'
+import 'gulu-duck/dist/lib/css/output.css'
 ```
 
 就可以使用我的组件了

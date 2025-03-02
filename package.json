@@ -1,6 +1,6 @@
 {
   "name": "gulu-duck",
-  "version": "0.0.8",
+  "version": "1.0.0",
   "license": "MIT",
   "files": ["dist/lib/*"],
   "main": "dist/lib/gulu-duck.js",

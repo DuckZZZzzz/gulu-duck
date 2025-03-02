@@ -31,6 +31,7 @@ yarn add gulu-duck
 
 <script setup>
 import { Button, Tabs, Switch, Dialog } from 'gulu-duck'
+import 'gulu-duck/dist/lib/css/output.css'
 </script>
 ```
 
