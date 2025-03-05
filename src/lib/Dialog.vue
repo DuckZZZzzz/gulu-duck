@@ -81,7 +81,6 @@ const handCancel = () => {
 }
 
 .gulu-dialog-container {
-
     position: fixed;
     top: 50%;
     left: 50%;

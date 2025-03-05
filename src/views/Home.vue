@@ -86,12 +86,15 @@ import Topnav from '../components/Topnav.vue'
 }
 
 .features {
-    margin: 64px auto;
-    // width: 400px;加上这句会导致在手机宽度小于400px的时候页面可以左右移动
+    margin: 45px auto;
+    min-width: 350px;
+    // 加上这句会导致在手机宽度小于400px的时候页面可以左右移动
+
 
     @media (min-width: 800px) {
         width: 800px;
     }
+
 
     @media (min-width: 1200px) {
         width: 1200px;
@@ -100,7 +103,9 @@ import Topnav from '../components/Topnav.vue'
     ul {
         display: flex;
         flex-wrap: wrap;
-
+        @media (max-width: 800px) {
+        justify-content: center;
+    }
         >li {
             width: 400px;
             margin: 16px 0;

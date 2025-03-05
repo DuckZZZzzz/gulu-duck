@@ -23,6 +23,7 @@ import Aside from "../components/Aside.vue";
     flex-direction: column;
     height: 100%;
     width: 100%;
+    padding: 0;
 }
 .content{
     // white-space: nowrap;

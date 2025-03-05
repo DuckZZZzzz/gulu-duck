@@ -6,7 +6,7 @@
 </template>
 
 <script lang="ts" setup>
-import { computed } from 'vue';
+import { computed, useAttrs } from 'vue';
 
 
 const {theme, size, level, loading} = defineProps({
@@ -62,8 +62,16 @@ const classString = computed(() => {
     & + & {
         margin-left: 8px;
     }
+
+    &:hover:not([disabled]) {
+        color: $blue;
+        border-color: $blue;
+    }
+    &.gulu-theme-default {
+        background: #fff;
+        border: 1px solid #ccc;
+    }
     &.gulu-theme-button {
-        color:#000;
         box-shadow: 0 1px 0 rgba( #000000, 0.05);
     }
     &.gulu-theme-link {

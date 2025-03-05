@@ -12,6 +12,7 @@ const emit = defineEmits<{
     (e: 'update:value', value: boolean)
 }>()
 
+
 const toggle = () => {
     emit('update:value', !props.value)
 }
@@ -31,7 +32,6 @@ $h2: $h - 4px;
     overflow: hidden;
     outline: none;
     border-radius: calc(#{$h} / 2);
-
 }
 
 .gulu-switch span {
